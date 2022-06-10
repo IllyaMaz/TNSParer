@@ -6,7 +6,6 @@ import Object.Adress;
 public class main {
     public static void main(String[] args) throws IOException {
         File file = new File("D:\\Новая папка\\TNSParse\\TNSNAMES.ORA");
-        StringBuilder stringBuilder = new StringBuilder();
         BufferedReader reader = new BufferedReader(new FileReader(file));
         String line = reader.readLine();
         Pattern pattern = Pattern.compile("\\(+ADDRESS\\s.+");
